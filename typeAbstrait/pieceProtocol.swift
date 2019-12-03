@@ -23,4 +23,5 @@ protocol pieceProtocol {
     //résultat : renvoie la pièce créée
     init(nomPiece:NomPiece)
     
+    
 }
