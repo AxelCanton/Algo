@@ -17,25 +17,14 @@ protocol joueurProtocol {
     //post : nbCylindreRestant = 2, nbSphèreRestant = 2, nbPyramideRestant = 2, nbCubeRestant = 2
     init(nom:String)
     
-    //nbCylindreRestant : joueurProtocol -> Int
-    //fonction qui renvoie le nombre de Cylindre restant au joueur
-    //post : renvoie un entier compris entre 0 et 2
-    func nbCylindreRestant()->Int
+    //fonction qui renvoie le nombre de pièces jouables correspondant à la pièce passée en paramètre
+    ////donnée : valeur de l'enum NomPiece correspondant à la pièce dont on veut obtenir le nb restant
+    //post : entier compris entre 0 et 2
+    func nbRestant(piece:NomPiece) -> Int
     
-    //nbSphèreRestant : joueurProtocol -> Int
-    //fonction qui renvoie le nombre de Sphères restant au joueur
-    //post : renvoie un entier compris entre 0 et 2
-    func nbSphereRestant()->Int
-    
-    //nbPyramideRestant : joueurProtocol -> Int
-    //fonction qui renvoie le nombre de Pyramide restant au joueur
-    //post : renvoie un entier compris entre 0 et 2
-    func nbPyramideRestant()->Int
-    
-    //nbCubeRestant : joueurProtocol -> Int
-    //fonction qui renvoie le nombre de Cube restant au joueur
-    //post : renvoie un entier compris entre 0 et 2
-    func nbCubeRestant()->Int
-    
+    //fonction qui décrémente de 1 le nombre de pièce de la pièce passée en paramètre possédé par le joueur
+    //donnée : valeur de l'enum NomPiece correspondant à la pièce qu'on veut décrémenter
+    //post : nombre
+    mutating func decrementer(piece:NomPiece)
     
 }
