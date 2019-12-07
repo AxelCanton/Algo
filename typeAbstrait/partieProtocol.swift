@@ -11,12 +11,12 @@ protocol partieProtocol {
     var joueur1 : joueurProtocol {get}
     var joueur2 : joueurProtocol {get}
     
-    //init : joueurProtocol x joueurProtocol -> partieProtocol
-    //fonction qui à partir de 2 joueurs créée une partie avec un plateau
-    //données : 2 joueurs différents : j1 correspond au joueur1 et j2 correspond au joueur2
-    //résultat : Une partie créée avec le plateau vide correspondant
+    //init : joueurProtocol x joueurProtocol x plateauProtocol -> partieProtocol
+    //fonction qui à partir de 2 joueurs et un plateau créée une partie 
+    //données : 2 joueurs différents : j1 correspond au joueur1 et j2 correspond au joueur2 et un plateau vide : plateau constitué de cases vides
+    //résultat : Une partie créée 
     //post : partieFinie = false
-    init(j1:joueurProtocol, j2:joueurProtocol)
+    init(j1:joueurProtocol, j2:joueurProtocol,plateau:plateauProtocol)
     
     //partieFinie : partieProtocol -> Bool
     //post : partieFinie = true si :
