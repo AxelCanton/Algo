@@ -13,7 +13,7 @@ protocol partieProtocol {
     
     //init : joueurProtocol x joueurProtocol -> partieProtocol
     //fonction qui à partir de 2 joueurs créée une partie avec un plateau
-    //données : 2 joueurs différents
+    //données : 2 joueurs différents : j1 correspond au joueur1 et j2 correspond au joueur2
     //résultat : Une partie créée avec le plateau vide correspondant
     //post : partieFinie = false
     init(j1:joueurProtocol, j2:joueurProtocol)
