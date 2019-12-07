@@ -14,7 +14,7 @@ protocol joueurProtocol {
     //fonction qui créée un joueur à partir de son nom
     //données : une chaîne de caractères représentant le nom du joueur
     //résultat : un joueur créé
-    //post : nbCylindreRestant = 2, nbSphèreRestant = 2, nbPyramideRestant = 2, nbCubeRestant = 2
+    //post : on initialise à 2 le nbRestant de pièces de chaque forme
     init(nom:String)
     
     //fonction qui renvoie le nombre de pièces jouables correspondant à la pièce passée en paramètre
