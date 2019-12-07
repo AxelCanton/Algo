@@ -1,5 +1,5 @@
 //
-//  pieceProtocol.swift
+//  NomPiece.swift
 //  
 //
 //
