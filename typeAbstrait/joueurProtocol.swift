@@ -17,11 +17,13 @@ protocol joueurProtocol {
     //post : on initialise à 2 le nbRestant de pièces de chaque forme
     init(nom:String)
     
+    //nbRestant : joueurProtocol x NomPiece -> Int
     //fonction qui renvoie le nombre de pièces jouables correspondant à la pièce passée en paramètre
     ////donnée : valeur de l'enum NomPiece correspondant à la pièce dont on veut obtenir le nb restant
     //post : entier compris entre 0 et 2
     func nbRestant(piece:NomPiece) -> Int
     
+    //decrementer : joueurProtocol x NomPiece 
     //fonction qui décrémente de 1 le nombre de pièce de la pièce passée en paramètre possédée par le joueur
     //donnée : valeur de l'enum NomPiece correspondant à la pièce qu'on veut décrémenter
     //post : nombre
