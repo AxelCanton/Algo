@@ -22,7 +22,7 @@ protocol plateauProtocol{
     
     //getCase : plateauProtocol x Int x Int -> caseProtocol
     //fonction qui renvoie la case correspondante à la position donnée
-    //données : x et y, 2 entiers, correspondant à la position de la case
+    //données : x et y, 2 entiers compris entre 0 et 3, correspondant à la position de la case
     //résultat : renvoie la case correspondante à la position
     //post : postion(getCase(x:Int,y:Int))=(x,y)
     func getCase(x:Int,y:Int)->caseProtocol
