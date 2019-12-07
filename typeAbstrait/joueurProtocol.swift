@@ -22,9 +22,10 @@ protocol joueurProtocol {
     //post : entier compris entre 0 et 2
     func nbRestant(piece:NomPiece) -> Int
     
-    //fonction qui décrémente de 1 le nombre de pièce de la pièce passée en paramètre possédé par le joueur
+    //fonction qui décrémente de 1 le nombre de pièce de la pièce passée en paramètre possédée par le joueur
     //donnée : valeur de l'enum NomPiece correspondant à la pièce qu'on veut décrémenter
     //post : nombre
-    mutating func decrementer(piece:NomPiece)
+    //post: si le nombre de pièces de la pièce passée en paramètres vaut 0 (le joueur ne possède plus cette pièce), renvoie une erreur
+    mutating func decrementer(piece:NomPiece) throws
     
 }
