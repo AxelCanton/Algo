@@ -17,7 +17,7 @@ protocol plateauProtocol{
     //données : une case, une pièce et un joueur
     //résultat : renvoie la case avec la pièce du joueur ajoutée
     //post : si la case est déjà occupée renvoie une erreur, si le joueur a déjà utilisé ses 2 pièces de la même forme renvoie une erreur et s'il existe une pièce de même forme de l'autre joueur dans la même colonne que la case ou la même ligne que la case ou la même région que la case renvoie une erreur
-    //post: estvide(ajouterPiece(piece,case,joueur)=false, et nbxxxRestant se décrémente de 1 (avec xxx correspondant au nom de la pièce)
+    //post: estvide(ajouterPiece(piece,case,joueur)=false
     mutating func ajouterPiece(case : caseProtocol, piece:pieceProtocol, joueur:joueurProtocol) throws -> plateauProtocol
     
     //getCase : plateauProtocol x Int x Int -> caseProtocol
